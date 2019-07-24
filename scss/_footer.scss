@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    background: #ededed;
+    position: fixed;
+    bottom: 0px;
+    font-size: 10px;
+    color: #979797;
+    padding: 22px 30px;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+        color: #979797;
+        padding-left: 10px;
+        
+    }
+    b{
+        font-weight: black;
+    }
+    .link{
+        float:right;
+    }
+}

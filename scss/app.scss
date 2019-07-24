@@ -1,0 +1,25 @@
+@import './aside';
+@import './footer';
+@import './form';
+@import './header';
+@import './variables';
+body{
+    background: $bg-body;
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.container{
+
+    width: 1000px;
+    display: flex;
+    padding-top:140px;
+    margin:auto;
+}
+aside{
+    width: 45%;
+}
+section{
+    width: 55%;
+}
