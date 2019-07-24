@@ -195,7 +195,7 @@ body {
   width: 1000px;
   display: flex;
   margin: auto;
-  margin-bottom: 100px; }
+  margin-bottom: 80px; }
 
 aside {
   width: 45%;
@@ -219,7 +219,6 @@ a {
     margin-bottom: 50px; }
 
 .service {
-  width: 33.33%;
-  align-self: b0; }
+  width: 33.33%; }
 
 /*# sourceMappingURL=app.css.map */
