@@ -18,13 +18,15 @@ footer {
   padding: 22px 30px;
   box-sizing: border-box; }
   footer a {
-    text-decoration: none;
-    color: #979797;
-    padding-left: 10px; }
+    color: #979797; }
+    footer a:hover {
+      color: #757575; }
   footer b {
     font-weight: black; }
   footer .link {
     float: right; }
+    footer .link a {
+      padding-left: 10px; }
 
 form {
   width: 300px;
@@ -36,7 +38,8 @@ form {
   form .form-description {
     font-size: 12.61px;
     color: #cfcfcf;
-    margin-top: 10px; }
+    margin-top: 10px;
+    padding-right: 9px; }
   form .register-link {
     font-size: 10.59px;
     display: block;
@@ -45,6 +48,8 @@ form {
     form .register-link a {
       color: #077fbd;
       text-decoration: none; }
+      form .register-link a:hover {
+        color: #1565c0; }
   form .divider {
     position: relative;
     margin-top: 18px; }
@@ -60,7 +65,12 @@ form {
       left: 128px;
       background: #ffffff; }
   form .form-group {
-    margin-top: 18px; }
+    margin-top: 8px; }
+    form .form-group p {
+      font-size: 10.59px;
+      color: #343434;
+      letter-spacing: -0.5px;
+      padding: 2px 0; }
     form .form-group label {
       font-size: 10.59px;
       color: #343434; }
@@ -68,6 +78,10 @@ form {
         float: right;
         color: #077fbd;
         text-decoration: none; }
+        form .form-group label a:hover {
+          color: #1565c0; }
+      form .form-group label .required-field {
+        color: #fc6680; }
     form .form-group .form-control {
       display: block;
       width: 100%;
@@ -80,29 +94,46 @@ form {
     form .form-group ::placeholder {
       font-size: 10.59px;
       color: #dddddd; }
-    form .form-group .btn {
-      display: block;
-      width: 100%;
-      border-radius: 2.5px;
-      font-size: 10.59px; }
-    form .form-group .btn-action {
-      background: #087fbd;
-      border: none;
-      color: #ffffff;
-      height: 34px; }
-    form .form-group .btn-social {
-      border: 1px solid #cccccc;
-      background: transparent;
-      height: 32px;
-      color: #424242;
-      position: relative; }
-      form .form-group .btn-social img {
-        width: 19px;
-        position: absolute;
-        left: 33px;
-        top: 5px;
-        width: 19px;
-        height: 19px; }
+
+.btn {
+  display: block;
+  width: 100%;
+  border-radius: 2.5px;
+  cursor: pointer;
+  font-size: 10.59px; }
+
+.btn-action {
+  background: #087fbd;
+  border: none;
+  margin-top: 16px;
+  color: #ffffff;
+  height: 34px; }
+  .btn-action:hover {
+    background: #01579b; }
+
+.btn-social {
+  border: 1px solid #cccccc;
+  background: transparent;
+  height: 32px;
+  color: #424242;
+  position: relative;
+  margin-top: 20px;
+  display: block; }
+  .btn-social img {
+    width: 19px;
+    position: absolute;
+    left: 33px;
+    top: 5px;
+    width: 19px;
+    height: 19px; }
+
+.btn-fb:hover {
+  background: #0288d1;
+  color: white; }
+
+.btn-gg:hover {
+  background: #ef9a9a;
+  color: white; }
 
 @font-face {
   font-family: 'UTM-Hanzel';
@@ -115,16 +146,43 @@ header {
   padding-left: 32px;
   position: fixed;
   top: 0px;
+  background: #ffffff;
   box-sizing: border-box; }
   header span {
     font-family: 'UTM-Hanzel';
     font-size: 12.27px;
     color: #077fbd;
     margin-top: 4px;
-    display: block; }
+    display: inline-block; }
+  header .breadcrumb {
+    position: relative;
+    bottom: 18px;
+    width: 200px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #b2b2b2;
+    margin: auto; }
+    header .breadcrumb a {
+      color: #b4d8eb; }
   header img {
     width: 40px;
     float: left; }
+
+.service {
+  padding: 0 70px;
+  text-align: center; }
+  .service .service-img {
+    height: 200px;
+    width: 100%; }
+  .service .service-name {
+    font-size: 21.18px; }
+  .service .service-description {
+    font-size: 12.61px;
+    padding: 10px 0px;
+    line-height: 20px; }
+  .service .service-price {
+    font-size: 32px;
+    padding: 5px 0px; }
 
 body {
   background: #ffffff;
@@ -136,13 +194,32 @@ body {
 .container {
   width: 1000px;
   display: flex;
-  padding-top: 140px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 100px; }
 
 aside {
-  width: 45%; }
+  width: 45%;
+  padding-top: 140px; }
 
 section {
   width: 55%; }
+
+a {
+  text-decoration: none; }
+
+.login {
+  padding-top: 140px; }
+
+.register {
+  padding-top: 90px; }
+
+.email-confirmation, .organization-information {
+  padding-top: 240px; }
+  .email-confirmation .form-description, .organization-information .form-description {
+    margin-bottom: 50px; }
+
+.service {
+  width: 33.33%;
+  align-self: b0; }
 
 /*# sourceMappingURL=app.css.map */

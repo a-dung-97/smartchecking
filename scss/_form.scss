@@ -17,6 +17,7 @@ form{
         font-size: $form-description-font-size;
         color: $form-description-color;
         margin-top:10px;
+        padding-right: 9px;
     }
 
     .register-link{
@@ -27,6 +28,9 @@ form{
         a{
             color:#077fbd;
             text-decoration: none;
+            &:hover{
+                color:#1565c0
+            }
         }
     }
     .divider{
@@ -47,7 +51,13 @@ form{
         }
     }
     .form-group{
-        margin-top: 18px;
+        margin-top: 8px;
+        p{
+            font-size: 10.59px;
+            color:#343434;
+            letter-spacing: -0.5px;
+            padding: 2px 0;
+        }
         label{
             font-size: 10.59px;
             color:#343434;
@@ -55,6 +65,12 @@ form{
                 float: right;
                 color:#077fbd;
                 text-decoration: none;
+                &:hover{
+                    color:#1565c0
+                }
+            }
+            .required-field{
+                color:#fc6680;
             }
         }
         .form-control{
@@ -72,34 +88,54 @@ form{
             font-size: 10.59px;
             color:$form-placeholder-color;
         }
-        .btn{
-            display: block;
-            width: 100%;
-            border-radius:2.5px;
         
-            font-size: 10.59px;
-        }
-        .btn-action{
-            background: $btn-color;
-            border:none;
-            color:#ffffff;
-            height: 34px;
-        }
-        .btn-social{
-            border: 1px solid $form-input-border-color;
-            background: transparent;
-            height: 32px;
-            color:#424242;
-            position: relative;
-            img{
-                width: 19px;
-                position: absolute;
-                left: 33px;
-                top:5px;
-                width: 19px;
-                height: 19px;
-            }
-        }
 
+
+    }
+}
+.btn{
+    display: block;
+    width: 100%;
+    border-radius:2.5px;
+    cursor: pointer;
+    font-size: 10.59px;
+}
+.btn-action{
+    background: $btn-color;
+    border:none;
+    margin-top:16px;
+    color:#ffffff;
+    height: 34px;
+    &:hover{
+        background:#01579b;
+    }
+}
+.btn-social{
+    border: 1px solid $form-input-border-color;
+    background: transparent;
+    height: 32px;
+    color:#424242;
+    position: relative;
+    margin-top:20px;
+    display: block;
+    img{
+        width: 19px;
+        position: absolute;
+        left: 33px;
+        top:5px;
+        width: 19px;
+        height: 19px;
+    }
+}
+.btn-fb{
+    &:hover{
+        background: #0288d1;
+        color:white;
+    }
+}
+.btn-gg{
+    &:hover{
+        background: #ef9a9a;
+        color:white;
     }
 }

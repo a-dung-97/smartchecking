@@ -3,6 +3,7 @@
 @import './form';
 @import './header';
 @import './variables';
+@import './service';
 body{
     background: $bg-body;
     font-family: $font;
@@ -14,12 +15,32 @@ body{
 
     width: 1000px;
     display: flex;
-    padding-top:140px;
     margin:auto;
+    margin-bottom: 100px;
 }
 aside{
     width: 45%;
+    padding-top:140px;
 }
 section{
     width: 55%;
+}
+a{
+    text-decoration: none;
+}
+.login{
+    padding-top:140px;
+}
+.register{
+    padding-top:90px;
+}
+.email-confirmation,.organization-information{
+    padding-top:240px;
+    .form-description{
+        margin-bottom: 50px;
+    }
+}
+.service{
+    width: 33.33%;
+    align-self:b0;
 }
